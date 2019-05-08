@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register</title>
+<link href="css/ion.rangeSlider.css" rel="stylesheet">
+<link href="css/image-picker.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+<style>
+.list-group {
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+</style>
+</head>
+<body>
+<div class="container" style="padding:5%;">
+  <h1 class="text-center">Register Your Account</h1>
+  <hr>
+  <form>
+    <div class="container">
+      <h2 class="text-center">User Information</h2>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 col-md-6  col-sm-12">
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="email@domain.com" required>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 col-md-6  col-sm-12">
+          <div class="form-group">
+            <label for="ScreenName">Screen Name</label>
+            <input type="text" class="form-control" id="screenNameInput" placeholder="Screen Name" required>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="Age">Age</label>
+            <input type="number" class="form-control" id="ageInput" placeholder="13" max="120" min="13" required>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <label for="iconPicker">Select Your Icon</label>
+          <select id="iconPicker" class="image-picker show-html">
+            <option data-img-src="img/01.png" data-img-class="first" data-img-alt="d20" value="1">D20</option>
+            <option data-img-src="img/02.png" data-img-alt="Skull" value="2">Skull</option>
+          </select>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <hr>
+      <h2 class="text-center">Game Information</h2>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="form-group">
+            <label for="groupSlider">Preferred Number of Players in Group</label>
+            <input id="groupSlider">
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 col-md-6  col-sm-12">
+          <div class="form-group">
+            <label for="campaignInput">Number of Campaigns Played</label>
+            <input type="number" class="form-control" id="campaignInput" placeholder="0"  min="0" max="100" required>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="expInput">Years of Experience</label>
+            <input type="number" class="form-control" id="expInput" placeholder="0" min="0" max="50" required>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <label for="systemSelector">Preferred Game Systems</label>
+          <div class="panel-body">
+            <ul class="list-group systemSelector" style=" -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">
+              <li class="list-group-item">D&amp;D 5e</li>
+              <li class="list-group-item">Pathfinder</li>
+              <li class="list-group-item">Dungeon Crawl Classics</li>
+              <li class="list-group-item">Call of Cthulhu</li>
+              <li class="list-group-item">Warhammer Fantasy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <label for="genreSelector">Preferred Genres</label>
+          <div class="panel-body">
+            <ul class="list-group genreSelector" style=" -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">
+              <li class="list-group-item">Fantasy</li>
+              <li class="list-group-item">Sci-Fi</li>
+              <li class="list-group-item">Steampunk</li>
+              <li class="list-group-item">Horror</li>
+              <li class="list-group-item">Gothic</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 col-sm-12">
+          <h2 class="text-center">Comfort Zone</h2>
+          <p class="text-center">Rate your preferred play zone in the following categories</p>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="form-group">
+            <label for="roleplaySlider">Roleplay</label>
+            <input id="roleplaySlider">
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="form-group">
+            <label for="contentSlider">Sexual Content</label>
+            <input id="contentSlider">
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="form-group">
+            <label for="humorSlider">Humor</label>
+            <input id="humorSlider">
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="form-group">
+            <label for="violenceSlider">Violence</label>
+            <input id="violenceSlider">
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+      <hr>
+      <p class="text-center"> <a class="btn btn-primary btn-lg" href="index.html" role="button">Cancel</a> <a class="btn btn-primary btn-lg" href="schedule.html" role="button">Create Account</a> </p>
+    </div>
+  </form>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script> 
+<script src="js/ion.rangeSlider.js"></script> 
+<script src="js/image-picker.js"></script> 
+
+<!-- Custom Javascript--> 
+<script>
+  
+$("#roleplaySlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 10,
+    values: ["100% RP", "90% RP 10% Combat", "80% RP 20% Combat", "70% RP 30% Combat", "60% RP 40% Combat", "50% RP 50% Combat", "40% RP 60% Combat", "30% RP 70% Combat", "20% RP 80% Combat", "10% RP 90% Combat", "100% Combat"]
+});
+    
+$("#contentSlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 4,
+    values: ["G-Rated", "PG-Rated", "PG-13-Rated", "R-Rated", "Uncensored"]
+});
+    
+$("#humorSlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 10,
+    values: ["100% Humor", "90% Humor 10% Serious", "80% Humor 20% Serious", "70% Humor 30% Serious", "60% Humor 40% Serious", "50% Humor 50% Serious", "40% Humor 60% Serious", "30% Humor 70% Serious", "20% Humor 80% Serious", "10% Humor 90% Serious", "100% Serious"]
+});
+    
+$("#violenceSlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 4,
+    values: ["No Violence", "Light Violence", "Moderate Violence", "Heavy Violence", "Extreme Violence"]
+});
+    
+$("#iconPicker").imagepicker()
+    
+$("#groupSlider").ionRangeSlider({
+    grid: true,
+    from: 2,
+    values: [3, 4, 5, 6, "7+"]
+});
+    
+$('.list-group li').click(function(e) {
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+        }else{
+            $(this).addClass('active');
+        };
+});
+
+
+</script>
+</body>
+</html>

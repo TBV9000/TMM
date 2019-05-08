@@ -1,0 +1,14 @@
+{
+    "screenName":"Steve1989",
+    "icon": "02.png",
+    "rating": 4,
+    "age": 26,
+    "yearsExp":3,
+    "groupSize":3,
+    "gamesPlayed":2,
+    "roleplaySlider":4,
+    "contentSlider":2,
+    "humorSlider":3,
+    "violenceSlider":4,
+	"playernum": 7
+  }

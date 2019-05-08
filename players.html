@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="css/star-rating.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+</head>
+<body>
+<ul class="nav nav-tabs">
+  <li class="nav-item"> <a class="nav-link" href="profile.html">Profile</a> </li>
+  <li class="nav-item"> <a class="nav-link active" href="players.html">Find Players</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="groups.html">My Groups</a> </li>
+</ul>
+<div class="container-fliud col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+  <div class="row">
+    <div class="col-2 offset-1 my-auto">
+      <h4> Sort By</h4>
+    </div>
+    <div class="col-3">
+      <h6>Category</h6>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="categoryRadios" id="compatRadio" value="option1" checked="true"/>
+        <label class="form-check-label" for="compatRadio"> Compatibility </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="categoryRadios" id="expRadio" value="option2" />
+        <label class="form-check-label" for="expRadio"> Years of Exp. </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="categoryRadios" id="rateRadio" value="option3" />
+        <label class="form-check-label" for="rateRadio"> Rating </label>
+      </div>
+    </div>
+    <div class="col-3 offset-1">
+      <h6>Order</h6>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="orderRadios" id="topFirstRadio" value="option1" checked="true" />
+        <label class="form-check-label" for="topFirstRadio"> Top-to-Bottom </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="orderRadios" id="bottomFirstRadio" value="option2" />
+        <label class="form-check-label" for="bottomFirstRadio"> Bottom-to-Top </label>
+      </div>
+    </div>
+  </div>
+</div>
+<div  id="cardholder" class="container-fluid col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+  <div class="card" id="card1">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">name</div>
+            <div class="col-6">years</div>
+            <div class="col-6">
+              <input id="stars1" name="stars1" class="stars rating-loading" data-size="xs">
+            </div>
+            <div class="col-6">Compat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" id="card2">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">name</div>
+            <div class="col-6">years</div>
+            <div class="col-6">
+              <input id="stars2" name="stars2" class="stars rating-loading" data-size="xs">
+            </div>
+            <div class="col-6">Compat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" id="card3">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">name</div>
+            <div class="col-6">years</div>
+            <div class="col-6">
+              <input id="stars3" name="stars3" class="stars rating-loading" data-size="xs">
+            </div>
+            <div class="col-6">Compat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" id="card4">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">name</div>
+            <div class="col-6">years</div>
+            <div class="col-6">
+              <input id="stars4" name="stars4" class="stars rating-loading" data-size="xs">
+            </div>
+            <div class="col-6">Compat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" id="card5">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">name</div>
+            <div class="col-6">years</div>
+            <div class="col-6">
+              <input id="stars5" name="stars5" class="stars rating-loading" data-size="xs">
+            </div>
+            <div class="col-6">Compat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" id="card6">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">name</div>
+            <div class="col-6">years</div>
+            <div class="col-6">
+              <input id="stars6" name="stars6" class="stars rating-loading" data-size="xs">
+            </div>
+            <div class="col-6">Compat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script> 
+<script src="js/star-rating.js"></script> 
+<script src="js/theme.js"></script> 
+<script src="js/fetchData.js"></script> 
+<script src="js/sortMethods.js"></script> 
+
+<!-- Custom Javascript--> 
+
+<script>
+    $(".stars").rating({
+        showCaption:false,
+        displayOnly: true,
+        theme: 'krajee-fas',
+        containerClass: 'is-star'
+    });
+    
+    var cardholder = document.getElementById("cardholder");
+    var cardArray = Array.from(cardholder.childNodes);
+    var starArray = Array("#stars1", "#stars2", "#stars3", "#stars4", "#stars5", "#stars6");
+    var playerData = null;
+    var userData = null;
+    var compatArray = null;
+    
+    loadJSON("data.json", function(playerDataImported) { 
+        //JSON data must be imported to execute internal code
+        loadJSON("currUser.json", function(userDataImported) {
+        playerData = playerDataImported;
+        userData = userDataImported;
+        compatArray = calcCompat(playerDataImported, userDataImported);
+        updateRadios();
+        });
+    });
+    
+    function updateRadios() {
+        sort(playerData);
+        for (var i = 0, len = playerData.length; i < len; i++) {
+            processEntry(playerData[i], cardArray, starArray, i);
+        }
+        //playerData.forEach(processEntry.bind(this, cardArray, starArray, tmpitr));
+    }
+    $(document).on('change', 'input:radio', function (event) {
+        updateRadios();
+    });
+    
+    
+</script>
+</body>
+</html>

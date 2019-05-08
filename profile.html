@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="css/ion.rangeSlider.css" rel="stylesheet">
+<link href="css/star-rating.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+</head>
+<body>
+<ul class="nav nav-tabs">
+  <li class="nav-item"> <a class="nav-link active" href="profile.html">Profile</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="players.html">Find Players</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="groups.html">My Groups</a> </li>
+</ul>
+<div class="container-fluid" style="margin: 30px !important;">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="row">
+        <div class="col-sm-3 col-md-2" style="margin: 15px !important;">
+          <div class="row" style="margin-bottom: 15px !important;"> <img src="img/01.png" alt="icon"/> </div>
+          <div class="row" style="margin-bottom: 15px !important;">
+            <input id="stars" name="stars" class="stars rating-loading" data-size="xs">
+          </div>
+          <div class="row"> <a class="btn btn-primary btn-md" href="#" role="button">Add Friend</a> </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Name</h6>
+              <p>screenName</p>
+            </div>
+            <div class="col-md-6">
+              <h6>Compatibility</h6>
+              <p>num%</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Age</h6>
+              <p>num</p>
+            </div>
+            <div class="col-md-6">
+              <h6>Years of Experience</h6>
+              <p>num</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Preferred Group Size</h6>
+              <p>num</p>
+            </div>
+            <div class="col-md-6">
+              <h6>Number of Campaigns Played</h6>
+              <p>num</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-10 offset-md-2">
+      <div class="form-group">
+        <label for="roleplaySlider">Roleplay</label>
+        <input id="roleplaySlider">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-10 offset-md-2">
+      <div class="form-group">
+        <label for="contentSlider">Sexual Content</label>
+        <input id="contentSlider">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-10 offset-md-2">
+      <div class="form-group">
+        <label for="humorSlider">Humor</label>
+        <input id="humorSlider">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-10 offset-md-2">
+      <div class="form-group">
+        <label for="violenceSlider">Violence</label>
+        <input id="violenceSlider">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script> 
+<script src="js/ion.rangeSlider.js"></script> 
+<script src="js/star-rating.js"></script> 
+<script src="js/theme.js"></script> 
+
+<!-- Custom Javascript--> 
+
+<script>
+    $('.stars').rating({
+        showCaption:false,
+        displayOnly: true,
+        theme: 'krajee-fas',
+        containerClass: 'is-star'
+    });
+    $(".stars").rating("update", 3);
+    
+    $("#roleplaySlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 10,
+    from_fixed:true,
+    to_fixed:true,
+    values: ["100% RP", "90% RP 10% Combat", "80% RP 20% Combat", "70% RP 30% Combat", "60% RP 40% Combat", "50% RP 50% Combat", "40% RP 60% Combat", "30% RP 70% Combat", "20% RP 80% Combat", "10% RP 90% Combat", "100% Combat"]
+});
+    
+$("#contentSlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 4,
+    from_fixed:true,
+    to_fixed:true,
+    values: ["G-Rated", "PG-Rated", "PG-13-Rated", "R-Rated", "Uncensored"]
+});
+    
+$("#humorSlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 10,
+    from_fixed:true,
+    to_fixed:true,
+    values: ["100% Humor", "90% Humor 10% Serious", "80% Humor 20% Serious", "70% Humor 30% Serious", "60% Humor 40% Serious", "50% Humor 50% Serious", "40% Humor 60% Serious", "30% Humor 70% Serious", "20% Humor 80% Serious", "10% Humor 90% Serious", "100% Serious"]
+});
+    
+$("#violenceSlider").ionRangeSlider({
+    type: "double",
+    grid: false,
+    from: 0,
+    to: 4,
+    from_fixed:true,
+    to_fixed:true,
+    values: ["No Violence", "Light Violence", "Moderate Violence", "Heavy Violence", "Extreme Violence"]
+});
+    </script>
+</body>
+</html>
