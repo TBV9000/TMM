@@ -14,5 +14,6 @@
     "humorSliderFrom":2,
     "violenceSliderTo":4,
     "violenceSliderFrom":3,
-	"playernum": 7
+	"playernum": 7,
+	"friends": [1,2]
   }

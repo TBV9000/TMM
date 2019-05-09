@@ -98,3 +98,30 @@ function loadJSON(file, callback) {
 		$("#stars").rating("update", currPlayer.rating);
 		$("#icon").attr("src", "img/" + currPlayer.icon);
     }
+	
+	function populateList(cardArray, starArray, playerList) {
+	
+		for(var i = 0; i < 6 /*max card number*/; i++){
+			if(playerList[i]) {
+				
+			var currPlayer = playerList[i];
+			var currIcon = cardArray[i].childNodes[1].childNodes[1].childNodes[1].childNodes[1];
+            var currIconPath = currIcon.currentSrc.replace(/([00-99])+.png/g, currPlayer.icon);
+        
+            currIcon.src=currIconPath;
+        
+            var currElement = cardArray[i].childNodes[1].childNodes[1].childNodes[3].childNodes[1];
+            var currName = currElement.childNodes[1].childNodes[0];
+            var currYears = currElement.childNodes[3].childNodes[0];
+            var compatPercent = currElement.childNodes[7].childNodes[0];
+            
+            currName.nodeValue = currPlayer.screenName;
+            currYears.nodeValue= "Years of Exp.:" + currPlayer.yearsExp;
+			compatPercent.nodeValue = "Compatability: " + compatArray[currPlayer.playernum - 1] + "%";
+			$("#"+cardArray[i].id.toString()).collapse("show");
+            $(starArray[i].toString()).rating("update", currPlayer.rating);
+			}else {
+				$("#"+cardArray[i].id.toString()).collapse("hide");
+			}
+		}
+	}
