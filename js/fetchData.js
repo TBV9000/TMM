@@ -68,3 +68,33 @@ function loadJSON(file, callback) {
 		$("#stars").rating("update", currPlayer.rating);
 		$("#icon").attr("src", "img/" + currPlayer.icon);
     }
+	
+	function displayCurrUser(cardID) {        
+        var currPlayerName = currUser.screenName;        
+        var currPlayer = currUser;
+        document.getElementById("screenName").childNodes[0].nodeValue = currPlayer.screenName;
+        document.getElementById("age").childNodes[0].nodeValue = currPlayer.age;
+        document.getElementById("yearsExp").childNodes[0].nodeValue = currPlayer.yearsExp;
+        document.getElementById("groupSize").childNodes[0].nodeValue = currPlayer.groupSize;
+        document.getElementById("campaignsPlayed").childNodes[0].nodeValue = currPlayer.gamesPlayed;
+        
+        $("#roleplaySlider").data("ionRangeSlider").update({
+            from: currPlayer.roleplaySliderFrom,
+            to: currPlayer.roleplaySliderTo
+        });
+		$("#contentSlider").data("ionRangeSlider").update({
+            from: currPlayer.contentSliderFrom,
+            to: currPlayer.contentSliderTo
+        });
+		$("#humorSlider").data("ionRangeSlider").update({
+            from: currPlayer.humorSliderFrom,
+            to: currPlayer.humorSliderTo
+        });
+		$("#violenceSlider").data("ionRangeSlider").update({
+            from: currPlayer.violenceSliderFrom,
+            to: currPlayer.violenceSliderTo
+        });
+		
+		$("#stars").rating("update", currPlayer.rating);
+		$("#icon").attr("src", "img/" + currPlayer.icon);
+    }
