@@ -19,7 +19,9 @@ function loadJSON(file, callback) {
 	function processEntry(currPlayer, cardArray, starArray, tmpitr) {
             var currIcon = cardArray[ (tmpitr * 2) + 1 ].childNodes[1].childNodes[1].childNodes[1].childNodes[1];
             var currIconPath = currIcon.currentSrc.replace(/([00-99])+.png/g, currPlayer.icon);
+        
             currIcon.src=currIconPath;
+        
             var currElement = cardArray[ (tmpitr * 2) + 1 ].childNodes[1].childNodes[1].childNodes[3].childNodes[1];
             var currName = currElement.childNodes[1].childNodes[0];
             var currYears = currElement.childNodes[3].childNodes[0];
@@ -29,4 +31,39 @@ function loadJSON(file, callback) {
             currYears.nodeValue= "Years of Exp.:" + currPlayer.yearsExp;
 			compatPercent.nodeValue = "Compatability: " + compatArray[currPlayer.playernum - 1] + "%";
             $(starArray[ tmpitr].toString()).rating("update", currPlayer.rating);
+    }
+
+    function displayPlayer(cardID) {
+        var currPlayerIconPath= document.getElementById(cardID).childNodes[1].childNodes[1].childNodes[1].childNodes[1];
+        
+        var currPlayerName = document.getElementById(cardID).childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].data;
+        
+        var currPlayer = null;
+        for(var i = 0; i < playerData.length; i++) {
+            if(playerData[i].screenName == currPlayerName)
+                currPlayer = playerData[i];
+        }
+        document.getElementById("screenName").childNodes[0].nodeValue = currPlayer.screenName;
+        document.getElementById("compat").childNodes[0].nodeValue = compatArray[currPlayer.playernum];
+        document.getElementById("age").childNodes[0].nodeValue = currPlayer.age;
+        document.getElementById("yearsExp").childNodes[0].nodeValue = currPlayer.yearsExp;
+        document.getElementById("groupSize").childNodes[0].nodeValue = currPlayer.groupSize;
+        document.getElementById("campaignsPlayed").childNodes[0].nodeValue = currPlayer.gamesPlayed;
+        
+        $("#roleplaySlider").data("ionRangeSlider").update({
+            from: currPlayer.roleplaySliderFrom,
+            to: currPlayer.roleplaySliderTo
+        });
+		$("#contentSlider").data("ionRangeSlider").update({
+            from: currPlayer.contentSliderFrom,
+            to: currPlayer.contentSliderTo
+        });
+		$("#humorSlider").data("ionRangeSlider").update({
+            from: currPlayer.humorSliderFrom,
+            to: currPlayer.humorSliderTo
+        });
+		$("#violenceSlider").data("ionRangeSlider").update({
+            from: currPlayer.violenceSliderFrom,
+            to: currPlayer.violenceSliderTo
+        });
     }

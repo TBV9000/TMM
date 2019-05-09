@@ -3,12 +3,20 @@ function calcCompat(players, User) {
 	players.forEach(function(currElement){
 		var groupSizeScore = Math.abs(currElement.groupSize - User.groupSize) * 2.5;
 		
-		var rpScore = Math.abs(currElement.roleplaySlider - User.roleplaySlider);
-		var contentScore = Math.abs(currElement.contentSlider - User.contentSlider) * 2.5;
-		var humorScore = Math.abs(currElement.humorSlider - User.humorSlider);
-		var violenceScore = Math.abs(currElement.violenceSlider - User.violenceSlider) * 2.5;
+		var rpScoreTo = Math.abs(currElement.roleplaySliderTo - User.roleplaySliderTo);
+		var rpScoreFrom = Math.abs(currElement.roleplaySliderFrom - User.roleplaySliderFrom);
+
+		var contentScoreTo = Math.abs(currElement.contentSliderTo - User.contentSliderTo) * 2.5;
+		var contentScoreFrom = Math.abs(currElement.contentSliderFrom - User.contentSliderFrom) * 2.5;
+
+		var humorScoreTo = Math.abs(currElement.humorSliderTo - User.humorSliderTo);
+		var humorScoreFrom = Math.abs(currElement.humorSliderFrom - User.humorSliderFrom);
+
+		var violenceScoreTo = Math.abs(currElement.violenceSliderTo - User.violenceSliderTo) * 2.5;
+		var violenceScoreFrom = Math.abs(currElement.violenceSliderFrom - User.violenceSliderFrom) * 2.5;
+
 		var totalScore
-		var totalScore = 100 - Math.round((groupSizeScore+ rpScore + contentScore + humorScore + violenceScore) * 5)
+		var totalScore = 100 - Math.round((groupSizeScore+ rpScoreTo + rpScoreFrom + contentScoreTo + contentScoreFrom + humorScoreTo + humorScoreFrom + violenceScoreTo + violenceScoreFrom) * 1.11)
 		tmpArray.push(totalScore);
 		console.log(totalScore);
 		
