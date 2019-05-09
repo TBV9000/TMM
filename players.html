@@ -70,7 +70,7 @@
       </div>
     </div>
   </div>
-  <div class="card" id="card2">
+  <div class="card" id="card2" onClick="card2click()" data-toggle="modal" data-target="#previewModal">
     <div class="card-body">
       <div class="row">
         <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -87,7 +87,7 @@
       </div>
     </div>
   </div>
-  <div class="card" id="card3">
+  <div class="card" id="card3" onClick="card3click()" data-toggle="modal" data-target="#previewModal">
     <div class="card-body">
       <div class="row">
         <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -104,7 +104,7 @@
       </div>
     </div>
   </div>
-  <div class="card" id="card4">
+  <div class="card" id="card4" onClick="card4click()" data-toggle="modal" data-target="#previewModal">
     <div class="card-body">
       <div class="row">
         <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -121,7 +121,7 @@
       </div>
     </div>
   </div>
-  <div class="card" id="card5">
+  <div class="card" id="card5" onClick="card5click()" data-toggle="modal" data-target="#previewModal">
     <div class="card-body">
       <div class="row">
         <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -138,7 +138,7 @@
       </div>
     </div>
   </div>
-  <div class="card" id="card6">
+  <div class="card" id="card6" onClick="card6click()" data-toggle="modal" data-target="#previewModal">
     <div class="card-body">
       <div class="row">
         <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -162,9 +162,11 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-xs-3 col-md-2" style="margin: 15px !important;">
-            <div class="row" style="margin-bottom: 15px !important;"> <img src="img/01.png" alt="icon" class="mx-auto"/> </div>
+            <div class="row" style="margin-bottom: 15px !important;"> <img src="img/01.png" alt="icon" class="mx-auto" id="icon"/> </div>
             <div class="row" style="margin-bottom: 15px !important;">
-              <input id="stars" name="stars" class="stars rating-loading mx-auto" data-size="xs">
+              <div class="container text-center" style="margin-left:-15px !important;">
+                <input id="stars" name="stars" class="stars rating-loading" data-size="xs">
+              </div>
             </div>
             <div class="row"> <a class="btn btn-primary btn-md mx-auto" href="#" role="button">Add Friend</a> </div>
           </div>

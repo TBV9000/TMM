@@ -33,9 +33,7 @@ function loadJSON(file, callback) {
             $(starArray[ tmpitr].toString()).rating("update", currPlayer.rating);
     }
 
-    function displayPlayer(cardID) {
-        var currPlayerIconPath= document.getElementById(cardID).childNodes[1].childNodes[1].childNodes[1].childNodes[1];
-        
+    function displayPlayer(cardID) {        
         var currPlayerName = document.getElementById(cardID).childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].data;
         
         var currPlayer = null;
@@ -66,4 +64,7 @@ function loadJSON(file, callback) {
             from: currPlayer.violenceSliderFrom,
             to: currPlayer.violenceSliderTo
         });
+		
+		$("#stars").rating("update", currPlayer.rating);
+		$("#icon").attr("src", "img/" + currPlayer.icon);
     }
