@@ -178,7 +178,7 @@
         <div class="col-lg-3"></div>
       </div>
       <hr>
-      <p class="text-center"> <a class="btn btn-primary btn-lg" href="index.html" role="button">Cancel</a> <a class="btn btn-primary btn-lg" href="profile.html" role="button">Create Account</a> </p>
+      <p class="text-center"> <a class="btn btn-primary btn-lg" href="index.html" role="button">Cancel</a> <a class="btn btn-primary btn-lg" href="players.html" role="button">Create Account</a> </p>
     </div>
   </form>
 </div>
@@ -193,7 +193,13 @@
 
 <!-- Custom Javascript--> 
 <script>
+    
+    //function writefile() {
+ 
+    
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2020 12:00:00 UTC"; 
   
+console.log(document.cookie);
 $("#roleplaySlider").ionRangeSlider({
     type: "double",
     grid: false,
