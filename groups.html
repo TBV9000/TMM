@@ -19,7 +19,7 @@
   <li class="nav-item"> <a class="nav-link active" href="groups.html">My Groups</a> </li>
 </ul>
 <div class="row">
-  <div id="listcardholder" class="col-12 col-md-6 height-50" style="padding-left:20px; padding-right:20px;">
+  <div id="listcardholder" class="col-12 col-md-6 height-50" style="padding-left:20px;">
     <div style="margin-top:20px; margin-bottom:20px;">
       <h5>My Friends</h5>
     </div>
@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-    <div class="card collapse" id="card4">
+    <div class="card collapse" id="listcard4">
       <div class="card-body">
         <div class="row">
           <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -107,7 +107,7 @@
               <div class="col-5">name</div>
               <div class="col-5">years</div>
               <div class="col-5">
-                <input id="stars4" name="stars4" class="stars rating-loading" data-size="xs">
+                <input id="liststars4" name="liststars4" class="stars rating-loading" data-size="xs">
               </div>
               <div class="col-5">Compat</div>
             </div>
@@ -123,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="card collapse" id="card5" >
+    <div class="card collapse" id="listcard5" >
       <div class="card-body">
         <div class="row">
           <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -132,7 +132,7 @@
               <div class="col-5">name</div>
               <div class="col-5">years</div>
               <div class="col-5">
-                <input id="stars5" name="stars5" class="stars rating-loading" data-size="xs">
+                <input id="liststars5" name="liststars5" class="stars rating-loading" data-size="xs">
               </div>
               <div class="col-5">Compat</div>
             </div>
@@ -148,7 +148,7 @@
         </div>
       </div>
     </div>
-    <div class="card collapse">
+    <div class="card collapse" id="listcard6">
       <div class="card-body">
         <div class="row">
           <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
@@ -157,7 +157,7 @@
               <div class="col-5">name</div>
               <div class="col-5">years</div>
               <div class="col-5">
-                <input id="stars6" name="stars6" class="stars rating-loading" data-size="xs">
+                <input id="liststars6" name="liststars6" class="stars rating-loading" data-size="xs">
               </div>
               <div class="col-5">Compat</div>
             </div>
@@ -174,7 +174,7 @@
       </div>
     </div>
   </div>
-  <div id="groupcardholder" class="col-12 col-md-6 height-50" style="padding-left:20px; padding-right:20px;">
+  <div id="groupcardholder" class="col-12 col-md-6 height-50" style="">
     <div style="margin-top:20px; margin-bottom:20px;">
       <h5>My Group</h5>
     </div>
@@ -552,7 +552,7 @@
 		});
 	$('#groupview4').on('click', function(event) {
 		$('#previewModal').modal('show');
-		displayPlayer("groupcard1");
+		displayPlayer("groupcard4");
 		});
 		$('#groupbutton5').on('click', function(event) {
 		var currPlayer = findPlayerFromName(document.getElementById("groupcard5").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
@@ -562,7 +562,7 @@
 		});
 	$('#groupview5').on('click', function(event) {
 		$('#previewModal').modal('show');
-		displayPlayer("groupcard1");
+		displayPlayer("groupcard6");
 		});
 		
 		$('#groupbutton6').on('click', function(event) {
@@ -573,7 +573,7 @@
 		});
 	$('#groupview6').on('click', function(event) {
 		$('#previewModal').modal('show');
-		displayPlayer("groupcard1");
+		displayPlayer("groupcard6");
 		});
 		
 			$('#listbutton1').on('click', function(event) {
@@ -616,7 +616,7 @@
 		});
 	$('#listview4').on('click', function(event) {
 		$('#previewModal').modal('show');
-		displayPlayer("listcard1");
+		displayPlayer("listcard4");
 		});
 		$('#listbutton5').on('click', function(event) {
 		var currPlayer = findPlayerFromName(document.getElementById("listcard5").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
@@ -626,7 +626,7 @@
 		});
 	$('#listview5').on('click', function(event) {
 		$('#previewModal').modal('show');
-		displayPlayer("listcard1");
+		displayPlayer("listcard5");
 		});
 		
 		$('#listbutton6').on('click', function(event) {
@@ -637,7 +637,7 @@
 		});
 	$('#listview6').on('click', function(event) {
 		$('#previewModal').modal('show');
-		displayPlayer("listcard1");
+		displayPlayer("listcard6");
 		});
     
 	
