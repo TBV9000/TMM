@@ -1,187 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Groups</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<link href="css/ion.rangeSlider.css" rel="stylesheet">
-<link href="css/star-rating.css" rel="stylesheet">
-<link href="css/theme.css" rel="stylesheet">
-<!-- Bootstrap -->
-<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Groups</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="css/ion.rangeSlider.css" rel="stylesheet">
+  <link href="css/star-rating.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
 </head>
+
 <body>
-<ul class="nav nav-tabs">
-  <li class="nav-item"> <a class="nav-link" href="profile.html">Profile</a> </li>
-  <li class="nav-item"> <a class="nav-link" href="players.html">Find Players</a> </li>
-  <li class="nav-item"> <a class="nav-link active" href="groups.html">My Groups</a> </li>
-</ul>
-<div class="row">
-  <div id="listcardholder" class="col-12 col-md-6 height-50" style="padding-left:20px;">
-    <div style="margin-top:20px; margin-bottom:20px;">
-      <h5>My Friends</h5>
-    </div>
-    <div class="card collapse" id="listcard1">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
-          <div class="col-8">
-            <div class="row">
-              <div class="col-5">name</div>
-              <div class="col-5">years</div>
-              <div class="col-5">
-                <input id="liststars1" name="liststars1" class="stars rating-loading" data-size="xs">
+  <ul class="nav nav-tabs">
+    <li class="nav-item"> <a class="nav-link" href="profile.html">Profile</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="players.html">Find Players</a> </li>
+    <li class="nav-item"> <a class="nav-link active" href="groups.html">My Groups</a> </li>
+  </ul>
+  <div class="row">
+    <div id="listcardholder" class="col-12 col-md-6 height-50" style="padding-left:20px;">
+      <div style="margin-top:20px; margin-bottom:20px;">
+        <h5>My Friends</h5>
+      </div>
+      <div class="card collapse" id="listcard1">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-5">name</div>
+                <div class="col-5">years</div>
+                <div class="col-5">
+                  <input id="liststars1" name="liststars1" class="stars rating-loading" data-size="xs">
+                </div>
+                <div class="col-5">Compat</div>
               </div>
-              <div class="col-5">Compat</div>
+            </div>
+            <div class="col-2">
+              <div class="row">
+                <button class="btn btn-success btn-sm" id="listbutton1" type="button">Add To Group</button>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary btn-sm" id="listview1" type="button"> View User </button>
+              </div>
             </div>
           </div>
-          <div class="col-2">
-                        <div class="row">
-            <button class="btn btn-success btn-sm" id="listbutton1" type="button">Add To Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="listview1" type="button"> View User </button>
-			</div>
+        </div>
+      </div>
+      <div class="card collapse" id="listcard2">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-5">name</div>
+                <div class="col-5">years</div>
+                <div class="col-5">
+                  <input id="liststars2" name="liststars2" class="stars rating-loading" data-size="xs">
+                </div>
+                <div class="col-5">Compat</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="row">
+                <button class="btn btn-success btn-sm" id="listbutton2" type="button">Add To Group</button>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary btn-sm" id="listview2" type="button"> View User </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card collapse" id="listcard3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-5">name</div>
+                <div class="col-5">years</div>
+                <div class="col-5">
+                  <input id="liststars3" name="liststars3" class="stars rating-loading" data-size="xs">
+                </div>
+                <div class="col-5">Compat</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="row">
+                <button class="btn btn-success btn-sm" id="listbutton3" type="button">Add To Group</button>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary btn-sm" id="listview3" type="button"> View User </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card collapse" id="listcard4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-5">name</div>
+                <div class="col-5">years</div>
+                <div class="col-5">
+                  <input id="liststars4" name="liststars4" class="stars rating-loading" data-size="xs">
+                </div>
+                <div class="col-5">Compat</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="row">
+                <button class="btn btn-success btn-sm" id="listbutton4" type="button">Add To Group</button>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary btn-sm" id="listview4" type="button"> View User </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card collapse" id="listcard5">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-5">name</div>
+                <div class="col-5">years</div>
+                <div class="col-5">
+                  <input id="liststars5" name="liststars5" class="stars rating-loading" data-size="xs">
+                </div>
+                <div class="col-5">Compat</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="row">
+                <button class="btn btn-success btn-sm" id="listbutton5" type="button">Add To Group</button>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary btn-sm" id="listview5" type="button"> View User </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card collapse" id="listcard6">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-5">name</div>
+                <div class="col-5">years</div>
+                <div class="col-5">
+                  <input id="liststars6" name="liststars6" class="stars rating-loading" data-size="xs">
+                </div>
+                <div class="col-5">Compat</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="row">
+                <button class="btn btn-success btn-sm" id="listbutton6" type="button">Add To Group</button>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary btn-sm" id="listview6" type="button"> View User </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card collapse" id="listcard2">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
-          <div class="col-8">
-            <div class="row">
-              <div class="col-5">name</div>
-              <div class="col-5">years</div>
-              <div class="col-5">
-                <input id="liststars2" name="liststars2" class="stars rating-loading" data-size="xs">
-              </div>
-              <div class="col-5">Compat</div>
-            </div>
-          </div>
-          <div class="col-2">
-                        <div class="row">
-            <button class="btn btn-success btn-sm" id="listbutton2" type="button">Add To Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="listview2" type="button"> View User </button>
-			</div>
-          </div>
-        </div>
+    <div id="groupcardholder" class="col-12 col-md-6 height-50" style="">
+      <div style="margin-top:20px; margin-bottom:20px;">
+        <h5>My Group</h5>
       </div>
-    </div>
-    <div class="card collapse" id="listcard3">
-      <div class="card-body">
+      <div class="card collapse" id="groupcard1">
+      <div class=" card-body">
         <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
-          <div class="col-8">
-            <div class="row">
-              <div class="col-5">name</div>
-              <div class="col-5">years</div>
-              <div class="col-5">
-                <input id="liststars3" name="liststars3" class="stars rating-loading" data-size="xs">
-              </div>
-              <div class="col-5">Compat</div>
-            </div>
-          </div>
-          <div class="col-2">
-                        <div class="row">
-            <button class="btn btn-success btn-sm" id="listbutton3" type="button">Add To Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="listview3" type="button"> View User </button>
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card collapse" id="listcard4">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
-          <div class="col-8">
-            <div class="row">
-              <div class="col-5">name</div>
-              <div class="col-5">years</div>
-              <div class="col-5">
-                <input id="liststars4" name="liststars4" class="stars rating-loading" data-size="xs">
-              </div>
-              <div class="col-5">Compat</div>
-            </div>
-          </div>
-          <div class="col-2">
-                        <div class="row">
-            <button class="btn btn-success btn-sm" id="listbutton4" type="button">Add To Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="listview4" type="button"> View User </button>
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card collapse" id="listcard5" >
-      <div class="card-body">
-        <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
-          <div class="col-8">
-            <div class="row">
-              <div class="col-5">name</div>
-              <div class="col-5">years</div>
-              <div class="col-5">
-                <input id="liststars5" name="liststars5" class="stars rating-loading" data-size="xs">
-              </div>
-              <div class="col-5">Compat</div>
-            </div>
-          </div>
-          <div class="col-2">
-                        <div class="row">
-            <button class="btn btn-success btn-sm" id="listbutton5" type="button">Add To Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="listview5" type="button"> View User </button>
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card collapse" id="listcard6">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
-          <div class="col-8">
-            <div class="row">
-              <div class="col-5">name</div>
-              <div class="col-5">years</div>
-              <div class="col-5">
-                <input id="liststars6" name="liststars6" class="stars rating-loading" data-size="xs">
-              </div>
-              <div class="col-5">Compat</div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="row">
-            <button class="btn btn-success btn-sm" id="listbutton6" type="button">Add To Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="listview6" type="button"> View User </button>
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="groupcardholder" class="col-12 col-md-6 height-50" style="">
-    <div style="margin-top:20px; margin-bottom:20px;">
-      <h5>My Group</h5>
-    </div>
-    <div class="card collapse" id="groupcard1"">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
           <div class="col-8">
             <div class="row">
               <div class="col-5">name</div>
@@ -193,12 +196,12 @@
             </div>
           </div>
           <div class="col-2">
-		  <div class="row">
-            <button class="btn btn-danger btn-sm" id="groupbutton1" type="button">Remove From Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="groupview1" type="button"> View User </button>
-			</div>
+            <div class="row">
+              <button class="btn btn-danger btn-sm" id="groupbutton1" type="button">Remove From Group</button>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-sm" id="groupview1" type="button"> View User </button>
+            </div>
           </div>
         </div>
       </div>
@@ -206,7 +209,7 @@
     <div class="card collapse" id="groupcard2">
       <div class="card-body">
         <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
           <div class="col-8">
             <div class="row">
               <div class="col-5">name</div>
@@ -218,12 +221,12 @@
             </div>
           </div>
           <div class="col-2">
-			<div class="row">
-            <button class="btn btn-danger btn-sm" id="groupbutton2" type="button">Remove From Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="groupview2" type="button"> View User </button>
-			</div>
+            <div class="row">
+              <button class="btn btn-danger btn-sm" id="groupbutton2" type="button">Remove From Group</button>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-sm" id="groupview2" type="button"> View User </button>
+            </div>
           </div>
         </div>
       </div>
@@ -231,7 +234,7 @@
     <div class="card collapse" id="groupcard3">
       <div class="card-body">
         <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
           <div class="col-8">
             <div class="row">
               <div class="col-5">name</div>
@@ -243,12 +246,12 @@
             </div>
           </div>
           <div class="col-2">
-			<div class="row">
-            <button class="btn btn-danger btn-sm" id="groupbutton3" type="button">Remove From Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="groupview3" type="button"> View User </button>
-			</div>
+            <div class="row">
+              <button class="btn btn-danger btn-sm" id="groupbutton3" type="button">Remove From Group</button>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-sm" id="groupview3" type="button"> View User </button>
+            </div>
           </div>
         </div>
       </div>
@@ -256,7 +259,7 @@
     <div class="card collapse" id="groupcard4">
       <div class="card-body">
         <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
           <div class="col-8">
             <div class="row">
               <div class="col-5">name</div>
@@ -269,11 +272,11 @@
           </div>
           <div class="col-2">
             <div class="row">
-            <button class="btn btn-danger btn-sm" id="groupbutton4" type="button">Remove From Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="groupview4" type="button"> View User </button>
-			</div>
+              <button class="btn btn-danger btn-sm" id="groupbutton4" type="button">Remove From Group</button>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-sm" id="groupview4" type="button"> View User </button>
+            </div>
           </div>
         </div>
       </div>
@@ -281,7 +284,7 @@
     <div class="card collapse" id="groupcard5">
       <div class="card-body">
         <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
           <div class="col-8">
             <div class="row">
               <div class="col-5">name</div>
@@ -294,11 +297,11 @@
           </div>
           <div class="col-2">
             <div class="row">
-            <button class="btn btn-danger btn-sm" id="groupbutton5" type="button">Remove From Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="groupview5" type="button"> View User </button>
-			</div>
+              <button class="btn btn-danger btn-sm" id="groupbutton5" type="button">Remove From Group</button>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-sm" id="groupview5" type="button"> View User </button>
+            </div>
           </div>
         </div>
       </div>
@@ -306,7 +309,7 @@
     <div class="card collapse" id="groupcard6">
       <div class="card-body">
         <div class="row">
-          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon"/> </div>
+          <div class="col-2"> <img class="img-fluid" src="img/01.png" alt="icon" /> </div>
           <div class="col-8">
             <div class="row">
               <div class="col-5">name</div>
@@ -319,368 +322,370 @@
           </div>
           <div class="col-2">
             <div class="row">
-            <button class="btn btn-danger btn-sm" id="groupbutton6" type="button">Remove From Group</button>
-			</div>
-			<div class="row">
-			<button class="btn btn-primary btn-sm" id="groupview6" type="button"> View User </button>
-			</div>
+              <button class="btn btn-danger btn-sm" id="groupbutton6" type="button">Remove From Group</button>
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-sm" id="groupview6" type="button"> View User </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="modal" role="dialog" id="previewModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-xs-3 col-md-2" style="margin: 15px !important;">
-            <div class="row" style="margin-bottom: 15px !important;"> <img src="img/01.png" alt="icon" class="mx-auto" id="icon"/> </div>
-            <div class="row" style="margin-bottom: 15px !important;">
-              <div class="container text-center" style="margin-left:-15px !important;">
-                <input id="stars" name="stars" class="stars rating-loading" data-size="xs">
+  </div>
+  <div class="modal" role="dialog" id="previewModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-3 col-md-2" style="margin: 15px !important;">
+              <div class="row" style="margin-bottom: 15px !important;"> <img src="img/01.png" alt="icon" class="mx-auto"
+                  id="icon" /> </div>
+              <div class="row" style="margin-bottom: 15px !important;">
+                <div class="container text-center" style="margin-left:-15px !important;">
+                  <input id="stars" name="stars" class="stars rating-loading" data-size="xs">
+                </div>
+              </div>
+              <div class="row"> <a class="btn btn-primary btn-md mx-auto" href="#" role="button">Add Friend</a> </div>
+            </div>
+            <div class="col-x-9 col-md-8">
+              <div class="row">
+                <div class="col-5">
+                  <h6>Name</h6>
+                  <p id="screenName">screenName</p>
+                </div>
+                <div class="col-5">
+                  <h6>Compatibility</h6>
+                  <p id="compat">num%</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5">
+                  <h6>Age</h6>
+                  <p id="age">num</p>
+                </div>
+                <div class="col-5">
+                  <h6>Years of Experience</h6>
+                  <p id="yearsExp">num</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-5">
+                  <h6>Preferred Group Size</h6>
+                  <p id="groupSize">num</p>
+                </div>
+                <div class="col-5">
+                  <h6>Number of Campaigns Played</h6>
+                  <p id="campaignsPlayed">num</p>
+                </div>
               </div>
             </div>
-            <div class="row"> <a class="btn btn-primary btn-md mx-auto" href="#" role="button">Add Friend</a> </div>
           </div>
-          <div class="col-x-9 col-md-8">
-            <div class="row">
-              <div class="col-5">
-                <h6>Name</h6>
-                <p id="screenName">screenName</p>
-              </div>
-              <div class="col-5">
-                <h6>Compatibility</h6>
-                <p id="compat">num%</p>
+          <div class="row">
+            <div class="col-sm-8 col-10 offset-md-2">
+              <div class="form-group">
+                <label for="roleplaySlider">Roleplay</label>
+                <input id="roleplaySlider">
               </div>
             </div>
-            <div class="row">
-              <div class="col-5">
-                <h6>Age</h6>
-                <p id="age">num</p>
-              </div>
-              <div class="col-5">
-                <h6>Years of Experience</h6>
-                <p id="yearsExp">num</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-10 offset-md-2">
+              <div class="form-group">
+                <label for="contentSlider">Sexual Content</label>
+                <input id="contentSlider">
               </div>
             </div>
-            <div class="row">
-              <div class="col-5">
-                <h6>Preferred Group Size</h6>
-                <p id="groupSize">num</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-10 offset-md-2">
+              <div class="form-group">
+                <label for="humorSlider">Humor</label>
+                <input id="humorSlider">
               </div>
-              <div class="col-5">
-                <h6>Number of Campaigns Played</h6>
-                <p id="campaignsPlayed">num</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-10 offset-md-2">
+              <div class="form-group">
+                <label for="violenceSlider">Violence</label>
+                <input id="violenceSlider">
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-8 col-10 offset-md-2">
-            <div class="form-group">
-              <label for="roleplaySlider">Roleplay</label>
-              <input id="roleplaySlider">
-            </div>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-        <div class="row">
-          <div class="col-sm-8 col-10 offset-md-2">
-            <div class="form-group">
-              <label for="contentSlider">Sexual Content</label>
-              <input id="contentSlider">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-10 offset-md-2">
-            <div class="form-group">
-              <label for="humorSlider">Humor</label>
-              <input id="humorSlider">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-10 offset-md-2">
-            <div class="form-group">
-              <label for="violenceSlider">Violence</label>
-              <input id="violenceSlider">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.3.1.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.3.1.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.3.1.js"></script>
-<script src="js/ion.rangeSlider.js"></script>
-<script src="js/star-rating.js"></script>
-<script src="js/theme.js"></script>
-<script src="js/fetchData.js"></script>
-<script src="js/sortMethods.js"></script>
-<script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.3.1.js"></script>
+  <script src="js/ion.rangeSlider.js"></script>
+  <script src="js/star-rating.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/fetchData.js"></script>
+  <script src="js/sortMethods.js"></script>
+  <script>
     $(".stars").rating({
-        showCaption:false,
-        displayOnly: true,
-        theme: 'krajee-fas',
-        containerClass: 'is-star'
+      showCaption: false,
+      displayOnly: true,
+      theme: 'krajee-fas',
+      containerClass: 'is-star'
     });
-    
+
     var groupcardholder = document.getElementById("groupcardholder");
-	var tmpGroupArray = Array.from(groupcardholder.childNodes);
-	var groupcardArray = [];
-	for(var i = 0; i < tmpGroupArray.length; i++) {
-		groupcardArray[i] = tmpGroupArray[(i*2)+3];
-	}
+    var tmpGroupArray = Array.from(groupcardholder.childNodes);
+    var groupcardArray = [];
+    for (var i = 0; i < tmpGroupArray.length; i++) {
+      groupcardArray[i] = tmpGroupArray[(i * 2) + 3];
+    }
     var groupstarArray = Array("#groupstars1", "#groupstars2", "#groupstars3", "#groupstars4", "#groupstars5", "#groupstars6");
-    
+
     var listcardholder = document.getElementById("listcardholder");
-	var tmpListArray = Array.from(listcardholder.childNodes);
-	var listcardArray = [];
-	
-	for(var i = 0; i < tmpListArray.length; i++) {
-		listcardArray[i] = tmpListArray[(i*2)+3];
-	}
+    var tmpListArray = Array.from(listcardholder.childNodes);
+    var listcardArray = [];
+
+    for (var i = 0; i < tmpListArray.length; i++) {
+      listcardArray[i] = tmpListArray[(i * 2) + 3];
+    }
     var liststarArray = Array("#liststars1", "#liststars2", "#liststars3", "#liststars4", "#liststars5", "#liststars6");
-    
+
     var playerData = null;
     var userData = null;
     var groupData = null;
     var compatArray = null;
     var currGroupArray = [];
-	var currFriendArray = [];
-	
-    loadJSON("data.json", function(playerDataImported) { 
-        //JSON data must be imported to execute internal code
-        loadJSON("currUser.json", function(userDataImported) {
-            loadJSON("groups.json", function(groupDataImported) {
-                playerData = playerDataImported;
-                userData = userDataImported;
-                groupData = groupDataImported
-                compatArray = calcCompat(playerDataImported, userDataImported);
-				for(var i = 0 ; i < groupData[0].players.length; i++) {
-					currGroupArray[i] = findPlayerFromID(groupData[0].players[i]);
-				}
-				for(var i = 0 ; i < userData.friends.length; i++) {
-					currFriendArray[i] = findPlayerFromID(userData.friends[i]);
-				}
-                updateCards();
-            });
+    var currFriendArray = [];
+
+    loadJSON("data.json", function (playerDataImported) {
+      //JSON data must be imported to execute internal code
+      loadJSON("currUser.json", function (userDataImported) {
+        loadJSON("groups.json", function (groupDataImported) {
+          playerData = playerDataImported;
+          userData = userDataImported;
+          groupData = groupDataImported
+          compatArray = calcCompat(playerDataImported, userDataImported);
+          for (var i = 0; i < groupData[0].players.length; i++) {
+            currGroupArray[i] = findPlayerFromID(groupData[0].players[i]);
+          }
+          for (var i = 0; i < userData.friends.length; i++) {
+            currFriendArray[i] = findPlayerFromID(userData.friends[i]);
+          }
+          updateCards();
         });
+      });
     });
-	
-	function updateCards() {
-		
-		//populate cards with new info
-		populateList(groupcardArray, groupstarArray, currGroupArray);
-		populateList(listcardArray, liststarArray, currFriendArray);
-	}
-    
-	function findPlayerFromID(idnum) {
-		for(var i = 0; i < playerData.length; i++) {
-			if(playerData[i].playernum == idnum)
-			return playerData[i];
-		}
-	}
-	
-	function findPlayerFromName(name) {
-		for(var i = 0; i < playerData.length; i++) {
-			if(playerData[i].screenName == name)
-			return playerData[i];
-		}
-	}
-	
+
+    function updateCards() {
+
+      //populate cards with new info
+      populateList(groupcardArray, groupstarArray, currGroupArray);
+      populateList(listcardArray, liststarArray, currFriendArray);
+    }
+
+    function findPlayerFromID(idnum) {
+      for (var i = 0; i < playerData.length; i++) {
+        if (playerData[i].playernum == idnum)
+          return playerData[i];
+      }
+    }
+
+    function findPlayerFromName(name) {
+      for (var i = 0; i < playerData.length; i++) {
+        if (playerData[i].screenName == name)
+          return playerData[i];
+      }
+    }
+
     //function updateRadios() {
     //    sort(playerData);
     //    for (var i = 0, len = playerData.length; i < len; i++) {
     //        processEntry(playerData[i], cardArray, starArray, i);
     //    }
     //}
-    
+
     var selectedPlayer = null;
     function groupcard1click() {
-        //$("#groupcard1").collapse();
-		displayPlayer("groupcard1");
+      //$("#groupcard1").collapse();
+      displayPlayer("groupcard1");
     }
-    
-	$('#groupbutton1').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("groupcard1").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
-		currFriendArray.push(currPlayer);
-		updateCards();
-		});
-	$('#groupview1').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("groupcard1");
-		});
-		
-	$('#groupbutton2').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("groupcard2").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
-		currFriendArray.push(currPlayer);
-		updateCards();
-		});
-	$('#groupview2').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("groupcard2");
-		});
-		
-	$('#groupbutton3').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("groupcard3").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
-		currFriendArray.push(currPlayer);
-		updateCards();
-		});
-	$('#groupview3').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("groupcard3");
-		});
-   $('#groupbutton4').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("groupcard4").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
-		currFriendArray.push(currPlayer);
-		updateCards();
-		});
-	$('#groupview4').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("groupcard4");
-		});
-		$('#groupbutton5').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("groupcard5").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
-		currFriendArray.push(currPlayer);
-		updateCards();
-		});
-	$('#groupview5').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("groupcard6");
-		});
-		
-		$('#groupbutton6').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("groupcard6").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
-		currFriendArray.push(currPlayer);
-		updateCards();
-		});
-	$('#groupview6').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("groupcard6");
-		});
-		
-			$('#listbutton1').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("listcard1").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
-		currGroupArray.push(currPlayer);
-		updateCards();
-		});
-	$('#listview1').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("listcard1");
-		});
-		
-	$('#listbutton2').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("listcard2").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
-		currGroupArray.push(currPlayer);
-		updateCards();
-		});
-	$('#listview2').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("listcard2");
-		});
-		
-	$('#listbutton3').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("listcard3").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
-		currGroupArray.push(currPlayer);
-		updateCards();
-		});
-	$('#listview3').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("listcard3");
-		});
-   $('#listbutton4').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("listcard4").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
-		currGroupArray.push(currPlayer);
-		updateCards();
-		});
-	$('#listview4').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("listcard4");
-		});
-		$('#listbutton5').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("listcard5").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
-		currGroupArray.push(currPlayer);
-		updateCards();
-		});
-	$('#listview5').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("listcard5");
-		});
-		
-		$('#listbutton6').on('click', function(event) {
-		var currPlayer = findPlayerFromName(document.getElementById("listcard6").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
-		currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
-		currGroupArray.push(currPlayer);
-		updateCards();
-		});
-	$('#listview6').on('click', function(event) {
-		$('#previewModal').modal('show');
-		displayPlayer("listcard6");
-		});
-    
-	
-	
+
+    $('#groupbutton1').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("groupcard1").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
+      currFriendArray.push(currPlayer);
+      updateCards();
+    });
+    $('#groupview1').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("groupcard1");
+    });
+
+    $('#groupbutton2').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("groupcard2").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
+      currFriendArray.push(currPlayer);
+      updateCards();
+    });
+    $('#groupview2').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("groupcard2");
+    });
+
+    $('#groupbutton3').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("groupcard3").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
+      currFriendArray.push(currPlayer);
+      updateCards();
+    });
+    $('#groupview3').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("groupcard3");
+    });
+    $('#groupbutton4').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("groupcard4").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
+      currFriendArray.push(currPlayer);
+      updateCards();
+    });
+    $('#groupview4').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("groupcard4");
+    });
+    $('#groupbutton5').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("groupcard5").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
+      currFriendArray.push(currPlayer);
+      updateCards();
+    });
+    $('#groupview5').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("groupcard6");
+    });
+
+    $('#groupbutton6').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("groupcard6").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currGroupArray.splice(currGroupArray.indexOf(currPlayer), 1);
+      currFriendArray.push(currPlayer);
+      updateCards();
+    });
+    $('#groupview6').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("groupcard6");
+    });
+
+    $('#listbutton1').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("listcard1").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
+      currGroupArray.push(currPlayer);
+      updateCards();
+    });
+    $('#listview1').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("listcard1");
+    });
+
+    $('#listbutton2').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("listcard2").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
+      currGroupArray.push(currPlayer);
+      updateCards();
+    });
+    $('#listview2').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("listcard2");
+    });
+
+    $('#listbutton3').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("listcard3").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
+      currGroupArray.push(currPlayer);
+      updateCards();
+    });
+    $('#listview3').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("listcard3");
+    });
+    $('#listbutton4').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("listcard4").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
+      currGroupArray.push(currPlayer);
+      updateCards();
+    });
+    $('#listview4').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("listcard4");
+    });
+    $('#listbutton5').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("listcard5").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
+      currGroupArray.push(currPlayer);
+      updateCards();
+    });
+    $('#listview5').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("listcard5");
+    });
+
+    $('#listbutton6').on('click', function (event) {
+      var currPlayer = findPlayerFromName(document.getElementById("listcard6").childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[0].nodeValue);
+      currFriendArray.splice(currFriendArray.indexOf(currPlayer), 1);
+      currGroupArray.push(currPlayer);
+      updateCards();
+    });
+    $('#listview6').on('click', function (event) {
+      $('#previewModal').modal('show');
+      displayPlayer("listcard6");
+    });
+
+
+
     $("#roleplaySlider").ionRangeSlider({
-    type: "double",
-    grid: false,
-    from: 0,
-    to: 10,
-    from_fixed:true,
-    to_fixed:true,
-    values: ["100% RP", "90% RP 10% Combat", "80% RP 20% Combat", "70% RP 30% Combat", "60% RP 40% Combat", "50% RP 50% Combat", "40% RP 60% Combat", "30% RP 70% Combat", "20% RP 80% Combat", "10% RP 90% Combat", "100% Combat"]
-});
-    
-$("#contentSlider").ionRangeSlider({
-    type: "double",
-    grid: false,
-    from: 0,
-    to: 4,
-    from_fixed:true,
-    to_fixed:true,
-    values: ["G-Rated", "PG-Rated", "PG-13-Rated", "R-Rated", "Uncensored"]
-});
-    
-$("#humorSlider").ionRangeSlider({
-    type: "double",
-    grid: false,
-    from: 0,
-    to: 10,
-    from_fixed:true,
-    to_fixed:true,
-    values: ["100% Humor", "90% Humor 10% Serious", "80% Humor 20% Serious", "70% Humor 30% Serious", "60% Humor 40% Serious", "50% Humor 50% Serious", "40% Humor 60% Serious", "30% Humor 70% Serious", "20% Humor 80% Serious", "10% Humor 90% Serious", "100% Serious"]
-});
-    
-$("#violenceSlider").ionRangeSlider({
-    type: "double",
-    grid: false,
-    from: 0,
-    to: 4,
-    from_fixed:true,
-    to_fixed:true,
-    values: ["No Violence", "Light Violence", "Moderate Violence", "Heavy Violence", "Extreme Violence"]
-});    
-</script>
+      type: "double",
+      grid: false,
+      from: 0,
+      to: 10,
+      from_fixed: true,
+      to_fixed: true,
+      values: ["100% RP", "90% RP 10% Combat", "80% RP 20% Combat", "70% RP 30% Combat", "60% RP 40% Combat", "50% RP 50% Combat", "40% RP 60% Combat", "30% RP 70% Combat", "20% RP 80% Combat", "10% RP 90% Combat", "100% Combat"]
+    });
+
+    $("#contentSlider").ionRangeSlider({
+      type: "double",
+      grid: false,
+      from: 0,
+      to: 4,
+      from_fixed: true,
+      to_fixed: true,
+      values: ["G-Rated", "PG-Rated", "PG-13-Rated", "R-Rated", "Uncensored"]
+    });
+
+    $("#humorSlider").ionRangeSlider({
+      type: "double",
+      grid: false,
+      from: 0,
+      to: 10,
+      from_fixed: true,
+      to_fixed: true,
+      values: ["100% Humor", "90% Humor 10% Serious", "80% Humor 20% Serious", "70% Humor 30% Serious", "60% Humor 40% Serious", "50% Humor 50% Serious", "40% Humor 60% Serious", "30% Humor 70% Serious", "20% Humor 80% Serious", "10% Humor 90% Serious", "100% Serious"]
+    });
+
+    $("#violenceSlider").ionRangeSlider({
+      type: "double",
+      grid: false,
+      from: 0,
+      to: 4,
+      from_fixed: true,
+      to_fixed: true,
+      values: ["No Violence", "Light Violence", "Moderate Violence", "Heavy Violence", "Extreme Violence"]
+    });    
+  </script>
 </body>
+
 </html>
