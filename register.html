@@ -200,11 +200,8 @@
   <!-- Custom Javascript-->
   <script>
     //function writefile() {
+    let pickedImage = null;
 
-
-    // document.cookie = "username=John Doe; expires=Thu, 18 Dec 2020 12:00:00 UTC";
-
-    // console.log(document.cookie);
     $("#roleplaySlider").ionRangeSlider({
       type: "double",
       grid: false,
@@ -243,7 +240,11 @@
       values: ["No Violence", "Light Violence", "Moderate Violence", "Heavy Violence", "Extreme Violence"]
     });
 
-    $("#iconPicker").imagepicker()
+    $("#iconPicker").imagepicker({
+      clicked: function () {
+        pickedImage = ($(this).find("option[value='" + $(this).val() + "']").data('img-src').split('img/')[1]);
+      }
+    })
 
     $("#groupSlider").ionRangeSlider({
       grid: true,
@@ -268,7 +269,7 @@
       let violenceSlider = $("#violenceSlider").data("ionRangeSlider");
       let groupSlider = $("#groupSlider").data("ionRangeSlider");
 
-      let userObj = {
+      let currUser = {
         screenName: document.getElementById('screenNameInput').value,
         age: document.getElementById('ageInput').value,
         yearsExp: document.getElementById('expInput').value,
@@ -280,10 +281,11 @@
         humorSliderTo: humorSlider.result.to,
         humorSliderFrom: humorSlider.result.from,
         violenceSliderTo: violenceSlider.result.to,
-        violenceSliderFrom: violenceSlider.result.from
-        // playernum: groupSlider.result.to     //WIP
-      };
-      return userObj;
+        violenceSliderFrom: violenceSlider.result.from,
+        groupSize: groupSlider.result.from + 3,
+        icon: pickedImage,
+      }
+      return currUser;
     };
 
     // Send JSON object to PHP script to update currUser.json
@@ -291,7 +293,7 @@
       $("#createAccountBtn").click(function (e) {
         $.ajax({
           type: "POST",
-          url: "updateCurrUser.php",
+          url: "php/updateProfile.php",
           data: {
             json_data: JSON.stringify(getJSON())
           },
