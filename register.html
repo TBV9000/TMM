@@ -293,12 +293,13 @@
       $("#createAccountBtn").click(function (e) {
         $.ajax({
           type: "POST",
-          url: "php/updateProfile.php",
+          url: "./php/updateProfile.php",
           data: {
             json_data: JSON.stringify(getJSON())
           },
           success: function (result, status, xhr) {
             $("#message").html(result);
+			console.log("success");
           }
         })
       });
